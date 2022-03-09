@@ -11,6 +11,7 @@ brew "chezmoi"
 brew "git"
 brew "terraform"
 brew "wget"
+brew "zsh"
 
 cask "bitwarden"
 cask "docker"
