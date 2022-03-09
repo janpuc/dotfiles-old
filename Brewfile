@@ -14,6 +14,7 @@ brew "wget"
 
 cask "bitwarden"
 cask "docker"
+cask "kitty"
 cask "opera-gx"
 cask "rectangle"
 cask "tunnelblick"
