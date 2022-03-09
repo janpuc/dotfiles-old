@@ -1,6 +1,7 @@
-[user]
-  name = Jan Pucilowski
-  email = jan.pucilowski99@gmail.com
+[include]
+  path = ~/.config/git-personal.conf
+[includeIf "gitdir:~/Development/Work/"]
+  path = ~/.config/git-work.conf
 [core]
   editor = nano
   excludesfile = ~/.gitignore
