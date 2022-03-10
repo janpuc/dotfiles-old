@@ -1,7 +1,7 @@
 [include]
-  path = ~/.config/git-personal.conf
+  path = ~/.config/git/git-personal.conf
 [includeIf "gitdir:~/Development/Work/"]
-  path = ~/.config/git-work.conf
+  path = ~/.config/git/git-work.conf
 [core]
   editor = nano
   excludesfile = ~/.gitignore
