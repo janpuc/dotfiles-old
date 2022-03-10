@@ -18,6 +18,7 @@ brew "terrascan"
 brew "tflint"
 brew "wget"
 brew "yamllint"
+brew "ykman"
 brew "zsh"
 
 cask "bitwarden"
