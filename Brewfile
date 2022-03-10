@@ -8,6 +8,7 @@ tap "homebrew/services"
 tap "romkatv/powerlevel10k"
 
 brew "awsume"
+brew "bitwarden-cli"
 brew "curl"
 brew "chezmoi"
 brew "git"
