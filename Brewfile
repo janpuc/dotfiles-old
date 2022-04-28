@@ -3,7 +3,6 @@ cask_args appdir: '/Applications'
 tap "homebrew/autoupdate"
 tap "homebrew/bundle"
 tap "homebrew/cask"
-tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 
@@ -27,7 +26,7 @@ brew "zsh"
 
 cask "bitwarden"
 cask "docker"
-cask "font-meslo-lg"
+cask "google-chrome"
 cask "kitty"
 cask "rectangle"
 cask "slack"
