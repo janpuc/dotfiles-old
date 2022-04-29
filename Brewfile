@@ -6,6 +6,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 
+brew "awscli"
 brew "awsume"
 brew "bitwarden-cli"
 brew "curl"
