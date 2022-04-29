@@ -1,9 +1,9 @@
 [include]
   path = ~/.config/git/git-personal.conf
-[includeIf "gitdir:~/Development/Work/Zoomph/"]
-  path = ~/.config/git/git-work-zoomph.conf
 [includeIf "gitdir:~/Development/Work/"]
   path = ~/.config/git/git-work.conf
+[includeIf "gitdir:~/Development/Work/Zoomph/"]
+  path = ~/.config/git/git-work-zoomph.conf
 [core]
   editor = nano
   excludesfile = ~/.gitignore
