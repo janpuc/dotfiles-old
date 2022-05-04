@@ -5,6 +5,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "sidneys/homebrew"
 
 brew "awscli"
 brew "awsume"
@@ -38,6 +39,15 @@ cask "rectangle"
 cask "slack"
 cask "stats"
 cask "tunnelblick"
-cask "utm"
 cask "visual-studio-code"
 cask "zoom"
+
+# UTM: VM Manager based on Qemu
+cask "utm"
+
+# UTM Windows dependencies
+brew "aria2"
+brew "cabextract"
+brew "cdrtools"
+brew "sidneys/homebrew/chntpw"
+brew "wimlib"
