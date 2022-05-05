@@ -7,7 +7,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "sidneys/homebrew"
 
-brew "ansbile"
+brew "ansible"
 brew "awscli"
 brew "awsume"
 brew "bitwarden-cli"
