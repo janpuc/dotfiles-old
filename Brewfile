@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap "homebrew/autoupdate"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "sidneys/homebrew"
@@ -57,5 +58,4 @@ brew "wimlib"
 brew "libusb"
 
 # Wine - (Not) a Windows Emulator
-tap "homebrew/cask-versions"
 cask "wine-stable"
