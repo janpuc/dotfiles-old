@@ -55,3 +55,7 @@ brew "openssl"
 brew "sidneys/homebrew/chntpw"
 brew "wimlib"
 brew "libusb"
+
+# Wine - (Not) a Windows Emulator
+tap "homebrew/cask-versions"
+cask "wine-stable"
