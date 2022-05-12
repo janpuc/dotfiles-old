@@ -59,3 +59,6 @@ brew "libusb"
 
 # Wine - (Not) a Windows Emulator
 cask "wine-stable"
+
+# Discord - Chat app to talk to strangers and maybe friends
+cask "discord"
