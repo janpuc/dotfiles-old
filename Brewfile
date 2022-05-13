@@ -65,3 +65,6 @@ cask "discord"
 
 # Parsec - App to stream a Windows host with low latency
 cask "parsec"
+
+# Microsoft RDP - App to stream a Windows host with (extreme) latency
+cask "microsoft-remote-desktop"
