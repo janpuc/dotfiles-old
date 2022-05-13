@@ -62,3 +62,6 @@ cask "wine-stable"
 
 # Discord - Chat app to talk to strangers and maybe friends
 cask "discord"
+
+# Parsec - App to stream a Windows host with low latency
+cask "parsec"
