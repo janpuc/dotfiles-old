@@ -68,3 +68,6 @@ cask "parsec"
 
 # Microsoft RDP - App to stream a Windows host with (extreme) latency
 cask "microsoft-remote-desktop"
+
+# Zero Tier - Mesh VPN Client
+cask "zerotier-one"
