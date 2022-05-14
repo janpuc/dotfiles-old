@@ -71,3 +71,6 @@ cask "microsoft-remote-desktop"
 
 # Zero Tier - Mesh VPN Client
 cask "zerotier-one"
+
+# Epic Games Store - Sometimes I like to have fun, sue me
+cask "epic-games"
