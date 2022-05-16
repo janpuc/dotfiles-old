@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 tap "homebrew/autoupdate"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
@@ -74,3 +75,6 @@ cask "zerotier-one"
 
 # Epic Games Store - Sometimes I like to have fun, sue me
 cask "epic-games"
+
+# Logitech G-Hub - Logitech G Mouse software
+cask "logitech-g-hub"
