@@ -78,3 +78,6 @@ cask "epic-games"
 
 # Logitech G-Hub - Logitech G Mouse software
 cask "logitech-g-hub"
+
+# Unnatural Scroll Wheels - Keep Touchpad natural scrolling and switch to the other on the Mouse
+cask "unnaturalscrollwheels"
