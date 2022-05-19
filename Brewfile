@@ -34,6 +34,9 @@ brew "yarn"
 brew "ykman"
 brew "zsh"
 
+# Earthly - Docker companion tool
+brew "earthly/earthly/earthly"
+
 cask "bitwarden"
 cask "docker"
 cask "ferdi"
