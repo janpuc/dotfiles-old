@@ -81,6 +81,3 @@ cask "logitech-g-hub"
 
 # Unnatural Scroll Wheels - Keep Touchpad natural scrolling and switch to the other on the Mouse
 cask "unnaturalscrollwheels"
-
-# Better Dummy - Dummy display to allow for 1440p monitor scaling
-cask "betterdummy"
