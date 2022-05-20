@@ -84,3 +84,9 @@ cask "logitech-g-hub"
 
 # Unnatural Scroll Wheels - Keep Touchpad natural scrolling and switch to the other on the Mouse
 cask "unnaturalscrollwheels"
+
+# Flutter - Flutter framework and it's dependencies
+cask "android-studio"
+cask "android-sdk"
+cask "android-ndk"
+cask "flutter"
