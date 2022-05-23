@@ -37,6 +37,9 @@ brew "zsh"
 # Earthly - Docker companion tool
 brew "earthly/earthly/earthly"
 
+# Rclone - Mount remote S3 buckets and other storage
+brew "rclone"
+
 cask "bitwarden"
 cask "docker"
 cask "ferdi"
