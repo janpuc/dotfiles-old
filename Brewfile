@@ -1,5 +1,6 @@
 cask_args appdir: '/Applications'
 
+tap "earthly/earthly"
 tap "homebrew/autoupdate"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -39,6 +40,9 @@ brew "earthly/earthly/earthly"
 
 # Rclone - Mount remote S3 buckets and other storage
 brew "rclone"
+
+# Openjdk8 - Java 8
+brew "openjdk@8"
 
 cask "bitwarden"
 cask "docker"
