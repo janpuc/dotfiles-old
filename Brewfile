@@ -41,9 +41,6 @@ brew "earthly/earthly/earthly"
 # Rclone - Mount remote S3 buckets and other storage
 brew "rclone"
 
-# Openjdk8 - Java 8
-brew "openjdk@8"
-
 cask "bitwarden"
 cask "docker"
 cask "ferdi"
@@ -97,3 +94,6 @@ cask "android-studio"
 cask "android-sdk"
 cask "android-ndk"
 cask "flutter"
+
+# Temurin - Free java
+cask "temurin@8"
