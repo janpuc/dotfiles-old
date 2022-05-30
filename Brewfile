@@ -97,6 +97,7 @@ cask "flutter"
 
 # Temurin - Free java
 cask "temurin8"
+cask "temurin"
 
 # MultiMC - Minecraft Client
 cask "multimc"
