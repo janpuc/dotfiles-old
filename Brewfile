@@ -41,6 +41,9 @@ brew "earthly/earthly/earthly"
 # Rclone - Mount remote S3 buckets and other storage
 brew "rclone"
 
+# OpenJDK - Java 17
+brew "openjdk@17"
+
 cask "bitwarden"
 cask "docker"
 cask "ferdi"
@@ -97,7 +100,6 @@ cask "flutter"
 
 # Temurin - Free java
 cask "temurin8"
-cask "temurin"
 
 # MultiMC - Minecraft Client
 cask "multimc"
