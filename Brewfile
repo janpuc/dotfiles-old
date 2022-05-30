@@ -96,4 +96,4 @@ cask "android-ndk"
 cask "flutter"
 
 # Temurin - Free java
-cask "temurin@8"
+cask "temurin8"
