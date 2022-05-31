@@ -49,6 +49,7 @@ brew "libpng"
 brew "jpeg" 
 brew "giflib"
 brew "librsvg"
+brew "ffmpeg"
 
 cask "bitwarden"
 cask "docker"
