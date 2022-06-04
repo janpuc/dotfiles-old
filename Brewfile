@@ -111,3 +111,6 @@ cask "temurin"
 
 # MultiMC - Minecraft Client
 cask "multimc"
+
+# Badlion Client - Minecraft Hypixel Client
+cask "badlion-client"
