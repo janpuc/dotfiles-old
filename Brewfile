@@ -41,6 +41,9 @@ brew "earthly/earthly/earthly"
 # Rclone - Mount remote S3 buckets and other storage
 brew "rclone"
 
+# Rar - RAR Unpack cli tool
+brew "rar"
+
 # Node Canvas - Dependencies
 brew "pkg-config"
 brew "cairo"
@@ -111,6 +114,3 @@ cask "temurin"
 
 # MultiMC - Minecraft Client
 cask "multimc"
-
-# Badlion Client - Minecraft Hypixel Client
-cask "badlion-client"
