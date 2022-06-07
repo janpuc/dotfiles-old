@@ -114,3 +114,6 @@ cask "multimc"
 
 # Rar - RAR Unpack tool
 cask "rar"
+
+# Parallels - Finally some good VM management software in here
+cask "parallels"
