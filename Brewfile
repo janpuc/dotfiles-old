@@ -117,3 +117,6 @@ cask "rar"
 
 # Parallels - Finally some good VM management software in here
 cask "parallels"
+
+# Balena Etcher - Write to USB
+cask "balenaetcher"
