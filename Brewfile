@@ -120,3 +120,6 @@ cask "parallels"
 
 # Balena Etcher - Write to USB
 cask "balenaetcher"
+
+# Google Cloud SDK
+cask "google-cloud-sdk"
