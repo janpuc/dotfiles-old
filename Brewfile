@@ -41,8 +41,8 @@ brew "earthly/earthly/earthly"
 # Rclone - Mount remote S3 buckets and other storage
 brew "rclone"
 
-# OpenRCT2 - Open source RollerCoaster Tycoon 2
-brew "openrct2"
+# Innoextract - Extract game files from gog.com
+brew "innoextract"
 
 # Node Canvas - Dependencies
 brew "pkg-config"
