@@ -44,6 +44,9 @@ brew "rclone"
 # Innoextract - Extract game files from gog.com
 brew "innoextract"
 
+# Gnupg - Encrypt and Decrypt gpg keys
+brew "gnupg"
+
 # Node Canvas - Dependencies
 brew "pkg-config"
 brew "cairo"
