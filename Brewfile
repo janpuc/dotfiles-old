@@ -129,3 +129,6 @@ cask "balenaetcher"
 
 # Google Cloud SDK
 cask "google-cloud-sdk"
+
+# Microsoft Teams - Workplace video conference
+cask "microsoft-teams"
