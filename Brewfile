@@ -47,6 +47,9 @@ brew "innoextract"
 # Gnupg - Encrypt and Decrypt gpg keys
 brew "gnupg"
 
+# Infracost - Get infrastructure cost live
+brew "infracost"
+
 # Node Canvas - Dependencies
 brew "pkg-config"
 brew "cairo"
