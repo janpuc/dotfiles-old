@@ -8,6 +8,7 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
+tap "minamijoyo/hcledit"
 tap "sidneys/homebrew"
 
 brew "ansible"
