@@ -25,10 +25,6 @@ brew "jq"
 brew "kubernetes-cli@1.22"
 brew "megatools"
 brew "node"
-brew "terraform"
-brew "terragrunt"
-brew "terrascan"
-brew "tflint"
 brew "wget"
 brew "yamllint"
 brew "yarn"
@@ -47,8 +43,20 @@ brew "innoextract"
 # Gnupg - Encrypt and Decrypt gpg keys
 brew "gnupg"
 
-# Infracost - Get infrastructure cost live
+# Terraform
+brew "terraform"
+
+# Terraform tools
+brew "pre-commit"
+brew "checkov"
+brew "terraform-docs"
+brew "terragrunt"
+brew "terrascan"
+brew "tflint"
+brew "tfsec"
 brew "infracost"
+brew "tfupdate"
+brew "minamijoyo/hcledit/hcledit"
 
 # Node Canvas - Dependencies
 brew "pkg-config"
