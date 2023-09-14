@@ -2,10 +2,8 @@
   path = ~/.config/git/git-personal.conf
 [includeIf "gitdir:~/Development/Work/"]
   path = ~/.config/git/git-work.conf
-[includeIf "gitdir:~/Development/Work/Zoomph/"]
-  path = ~/.config/git/git-work-zoomph.conf
 [core]
-  editor = nano
+  editor = code --wait
   excludesfile = ~/.gitignore
   autocrlf = input
 [color]
@@ -16,9 +14,9 @@
 [init]
   defaultBranch = main
 [web]
-  browser = opera-gx
-[browser "opera-gx"]
-  path = /Applications/Opera GX.app
+  browser = arc
+[browser "arc"]
+  path = /Applications/Arc.app
 [credential]
   helper = osxkeychain
 [push]
@@ -37,4 +35,10 @@
   l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [pull]
   rebase = true
-
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[diff "sopsdiffer"]
+	textconv = sops -d --config /dev/null

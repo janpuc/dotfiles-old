@@ -1,146 +1,124 @@
-cask_args appdir: '/Applications'
-
-tap "earthly/earthly"
-tap "homebrew/autoupdate"
+## Taps
+tap "buo/cask-upgrade"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-drivers"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "minamijoyo/hcledit"
-tap "sidneys/homebrew"
 
-brew "ansible"
-brew "awscli"
-brew "awsume"
-brew "bitwarden-cli"
-brew "curl"
+## Brews
+
+# age - file encryption
+brew "age"
+
+# chezmoi - dotfiles management
 brew "chezmoi"
-brew "dive"
-brew "dockutil"
+
+# curl - transfer url
+brew "curl"
+
+# git - the stupid content tracker
 brew "git"
-brew "go"
-brew "helm"
-brew "jq"
-brew "kubernetes-cli@1.22"
-brew "megatools"
-brew "node"
-brew "wget"
-brew "yamllint"
-brew "yarn"
-brew "ykman"
-brew "zsh"
 
-# Earthly - Docker companion tool
-brew "earthly/earthly/earthly"
+# git-extras - git utilities
+brew "git-extras"
 
-# Rclone - Mount remote S3 buckets and other storage
-brew "rclone"
-
-# Innoextract - Extract game files from gog.com
-brew "innoextract"
-
-# Gnupg - Encrypt and Decrypt gpg keys
+# gnupg - privacy guard
 brew "gnupg"
 
-# Terraform
+# helm - package manager for kubernetes
+brew "helm"
+
+# jq - command-line JSON processor
+brew "jq"
+
+# mas - Mac App Store command-line interface
+brew "mas"
+
+# openshift-cli - OpenShift command-line interface
+brew "openshift-cli"
+
+# powerlevel10k - theme for Zsh
+brew "powerlevel10k"
+
+# sops - tool for managing secrets
+brew "sops"
+
+# terraform - infrastructure as code
 brew "terraform"
 
-# Terraform tools
-brew "pre-commit"
-brew "checkov"
-brew "terraform-docs"
-brew "terragrunt"
-brew "terrascan"
-brew "tflint"
-brew "tfsec"
-brew "infracost"
-brew "tfupdate"
-brew "minamijoyo/hcledit/hcledit"
+# yamllint - linter for YAML files
+brew "yamllint"
 
-# Node Canvas - Dependencies
-brew "pkg-config"
-brew "cairo"
-brew "pango"
-brew "libpng"
-brew "jpeg" 
-brew "giflib"
-brew "librsvg"
-brew "ffmpeg"
+# zsh - the Z shell
+brew "zsh"
 
-cask "bitwarden"
-cask "docker"
-cask "ferdi"
-cask "google-chrome"
-cask "kitty"
-cask "rectangle"
-cask "slack"
-cask "stats"
-cask "tunnelblick"
-cask "visual-studio-code"
-cask "zoom"
+## Casks
 
-# UTM: VM Manager based on Qemu
-cask "utm"
+# 1Password - password manager
+cask "1password-beta"
 
-# UTM Windows dependencies
-brew "aria2"
-brew "cabextract"
-brew "cdrtools"
-brew "openssl"
-brew "sidneys/homebrew/chntpw"
-brew "wimlib"
-brew "libusb"
+# Arc - cool browser
+cask "arc"
 
-# Wine - (Not) a Windows Emulator
-cask "wine-stable"
+# Crossover - wine emulator
+cask "crossover"
 
-# Discord - Chat app to talk to strangers and maybe friends
+# Discord - chat and call app (but for gamers)
 cask "discord"
 
-# Parsec - App to stream a Windows host with low latency
-cask "parsec"
+# Docker - containerize all the things
+cask "docker"
 
-# Microsoft RDP - App to stream a Windows host with (extreme) latency
-cask "microsoft-remote-desktop"
+# Google Chrome - browser, the common one
+cask "google-chrome"
 
-# Zero Tier - Mesh VPN Client
-cask "zerotier-one"
+# Hidden Bar - hide menu bar icons
+cask "hiddenbar"
 
-# Epic Games Store - Sometimes I like to have fun, sue me
-cask "epic-games"
+# Keeping You Awake - prevents mac from going to sleep
+cask "keepingyouawake"
 
-# Logitech G-Hub - Logitech G Mouse software
+# Logitech G Hub - mouse macros, i hate it
 cask "logitech-g-hub"
 
-# Unnatural Scroll Wheels - Keep Touchpad natural scrolling and switch to the other on the Mouse
+# Messanger - social messages
+cask "messenger"
+
+# Microsoft Teams - work calls or chats, i hate it as well
+cask "microsoft-teams"
+
+# Obsidian - markdown editor, second brain (not mine tho)
+cask "obsidian"
+
+# Prism Launcher - mc launcher, switch when this one as well becomes deprecated
+cask "prismlauncher"
+
+# Rectangle - move and resize windows, might look into yabai as well
+cask "rectangle"
+
+# Slack - work chat, a good one
+cask "slack"
+
+# Stats - system monitor in menu bar
+cask "stats"
+
+# Tunnelblick - ovpn client
+cask "tunnelblick"
+
+# Unnatural Scroll Wheels - fix mouse scroll
 cask "unnaturalscrollwheels"
 
-# Flutter - Flutter framework and it's dependencies
-cask "android-studio"
-cask "android-sdk"
-cask "android-ndk"
-cask "flutter"
+# UTM - VM utility using QEMU
+cask "utm"
 
-# Temurin - Free java
-cask "temurin8"
-cask "temurin"
+# VSCode - code editor, IDE wannabe
+cask "visual-studio-code"
 
-# MultiMC - Minecraft Client
-cask "multimc"
+# Warp - modern terminal emulator
+cask "warp"
 
-# Rar - RAR Unpack tool
-cask "rar"
+# Zoom - work calls
+cask "zoom"
 
-# Parallels - Finally some good VM management software in here
-cask "parallels"
+# Prime Video - amazon flavour video stream
+mas "Prime Video", id: 545519333
 
-# Balena Etcher - Write to USB
-cask "balenaetcher"
-
-# Google Cloud SDK
-cask "google-cloud-sdk"
-
-# Microsoft Teams - Workplace video conference
-cask "microsoft-teams"
+# WireGuard - wg vpn client
+mas "WireGuard", id: 1451685025
