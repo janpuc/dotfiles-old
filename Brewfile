@@ -1,6 +1,7 @@
 ## Taps
 tap "buo/cask-upgrade"
 tap "homebrew/bundle"
+tap "homebrew/cask-versions"
 
 ## Brews
 
