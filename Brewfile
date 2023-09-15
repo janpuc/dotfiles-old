@@ -14,6 +14,9 @@ brew "chezmoi"
 # curl - transfer url
 brew "curl"
 
+# dlv - debugger for go
+brew "dlv"
+
 # git - the stupid content tracker
 brew "git"
 
@@ -23,11 +26,26 @@ brew "git-extras"
 # gnupg - privacy guard
 brew "gnupg"
 
+# go - golang
+brew "go"
+
+# gopls - go language server
+brew "gopls"
+
+# goreleaser - release go
+brew "goreleaser"
+
 # helm - package manager for kubernetes
 brew "helm"
 
 # jq - command-line JSON processor
 brew "jq"
+
+# kubectx - k8s context switcher
+brew "kubectx"
+
+# kubernetes-cli - kubectl
+brew "kubernetes-cli"
 
 # mas - Mac App Store command-line interface
 brew "mas"
@@ -40,6 +58,9 @@ brew "powerlevel10k"
 
 # sops - tool for managing secrets
 brew "sops"
+
+# staticcheck - golang linter
+brew "staticcheck"
 
 # terraform - infrastructure as code
 brew "terraform"
