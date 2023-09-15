@@ -62,6 +62,9 @@ brew "sops"
 # staticcheck - golang linter
 brew "staticcheck"
 
+# steamcmd - cli tool for steam
+brew "steamcmd"
+
 # terraform - infrastructure as code
 brew "terraform"
 
