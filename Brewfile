@@ -62,9 +62,6 @@ brew "sops"
 # staticcheck - golang linter
 brew "staticcheck"
 
-# steamcmd - cli tool for steam
-brew "steamcmd"
-
 # terraform - infrastructure as code
 brew "terraform"
 
@@ -126,6 +123,9 @@ cask "slack"
 
 # Stats - system monitor in menu bar
 cask "stats"
+
+# steamcmd - cli tool for steam
+cask "steamcmd"
 
 # Tunnelblick - ovpn client
 cask "tunnelblick"
