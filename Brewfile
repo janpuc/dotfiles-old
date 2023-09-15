@@ -76,6 +76,9 @@ brew "zsh"
 # 1Password - password manager
 cask "1password-beta"
 
+# 1Password cli - cli for 1pass
+cask "1password-cli"
+
 # Arc - cool browser
 cask "arc"
 
