@@ -82,6 +82,9 @@ cask "1password-cli"
 # Arc - cool browser
 cask "arc"
 
+# Caprine - open source fb messanger client
+cask "caprine"
+
 # Crossover - wine emulator
 cask "crossover"
 
@@ -100,9 +103,6 @@ cask "hiddenbar"
 # Keeping You Awake - prevents mac from going to sleep
 cask "keepingyouawake"
 
-# Logitech G Hub - mouse macros, i hate it
-cask "logitech-g-hub"
-
 # Messanger - social messages
 cask "messenger"
 
@@ -111,6 +111,9 @@ cask "microsoft-teams"
 
 # Obsidian - markdown editor, second brain (not mine tho)
 cask "obsidian"
+
+# PGAdmin4 - postgresql database GUI
+cask "pgadmin4"
 
 # Prism Launcher - mc launcher, switch when this one as well becomes deprecated
 cask "prismlauncher"
