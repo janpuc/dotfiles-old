@@ -161,6 +161,10 @@ cask "keepingyouawake"
 # https://www.messenger.com/desktop
 cask "messenger"
 
+# ==> microsoft-auto-update: 4.64.23100802 (auto_updates)
+# https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate
+cask "microsoft-auto-update"
+
 # ==> microsoft-teams:
 # https://www.microsoft.com/en/microsoft-teams/group-chat-software/
 cask "microsoft-teams"
