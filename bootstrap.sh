@@ -9,7 +9,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 brew install --cask 1password-cli
 
-eval $(op account add --address my.1password.com --email $email --secret-key $secretkey
+eval "$(op account add --address my.1password.com --email $email --secret-key $secretkey)"
 
 brew install chezmoi
 
