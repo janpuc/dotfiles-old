@@ -9,3 +9,5 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 autoload -Uz compinit && compinit
+
+eval "$(direnv hook zsh)"
