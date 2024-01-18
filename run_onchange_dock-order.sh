@@ -1,5 +1,10 @@
 #!/bin/bash
 
+echo "\n"
+echo "###############################################################################\n"
+echo "# run_onchange_dock-order.sh                                                  #\n"
+echo "###############################################################################\n"
+
 # Order Dock icons
 dockutil --remove all --no-restart
 dockutil --position 1 --add '/System/Applications/Launchpad.app' --section apps --no-restart
