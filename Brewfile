@@ -213,10 +213,10 @@ cask "warp"
 # https://www.zoom.us/
 cask "zoom"
 
-# ==> Amazon Prime Video:
-# From: https://apps.apple.com/pl/app/amazon-prime-video/id545519333?uo=4
-mas "Prime Video", id: 545519333
+# # ==> Amazon Prime Video:
+# # From: https://apps.apple.com/pl/app/amazon-prime-video/id545519333?uo=4
+# mas "Prime Video", id: 545519333
 
-# ==> WireGuard:
-# From: https://apps.apple.com/pl/app/wireguard/id1451685025?mt=12&uo=4
-mas "WireGuard", id: 1451685025
+# # ==> WireGuard:
+# # From: https://apps.apple.com/pl/app/wireguard/id1451685025?mt=12&uo=4
+# mas "WireGuard", id: 1451685025
