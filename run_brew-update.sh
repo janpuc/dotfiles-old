@@ -1,3 +1,3 @@
 #!/bin/bash
 
-brew cu --all --cleanp --force --yes --include-mas
+brew cu --all --cleanup --force --yes --include-mas
