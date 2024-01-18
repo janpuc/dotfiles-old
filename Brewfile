@@ -25,6 +25,11 @@ brew "curl"
 # https://github.com/go-delve/delve
 brew "delve"
 
+# ==> dockutil:
+# Tool for managing dock items
+# https://github.com/kcrawford/dockutil
+brew "dockutil"
+
 # ==> git:
 # Distributed revision control system
 # https://git-scm.com
