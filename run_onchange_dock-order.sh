@@ -4,6 +4,7 @@ printf "\n"
 printf "###############################################################################\n"
 printf "# run_onchange_dock-order.sh                                                  #\n"
 printf "###############################################################################\n"
+printf "\n"
 
 # Order Dock icons
 dockutil --remove all --no-restart
