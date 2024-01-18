@@ -1,6 +1,7 @@
 ## Taps
 tap "buo/cask-upgrade"
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
 ## Brews
@@ -149,6 +150,10 @@ cask "discord"
 # ==> docker:
 # https://www.docker.com/products/docker-desktop
 cask "docker"
+
+# ==> font-meslo-lg-nerd-font:
+# https://github.com/ryanoasis/nerd-fonts
+cask "font-meslo-lg-nerd-font"
 
 # ==> google-chrome:
 # https://www.google.com/chrome/
