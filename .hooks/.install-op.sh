@@ -15,6 +15,7 @@ setup_bin_directory() {
     if [[ ":$PATH:" != *":$bin_directory:"* ]]; then
         # Prefer appending to PATH so existing binaries from Homebrew, etc. are found first
         export PATH="${PATH}:${bin_directory}"
+        echo "${PATH}:${bin_directory}" >> /etc/paths
     fi
 }
 

@@ -2,7 +2,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Extend PATH.
+typeset -U PATH path
 path+=(
+  # The default directories minus ~/.local/bin and $HOMEBREW_PREFIX/*.
+  ${path:#(${HOME}/.local/bin|${HOMEBREW_PREFIX}/*)}
+  # Extra directories at the end.
+  "${HOMEBREW_PREFIX}/bin"
   "${HOME}/.local/bin"
 )
 
