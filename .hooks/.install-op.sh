@@ -50,7 +50,15 @@ fetch_op_binary() {
         rm "${bin_directory}/op.zip"
 
         # TODO: Fix PATH issue, for now just move to /usr/local/bin
-        mv "${bin_directory}/op" /usr/local/bin/op
+        local usr_bin_directory
+        usr_bin_directory="/usr/local/bin"
+
+        if [ ! -d "$usr_bin_directory" ]; then
+            mkdir -p "$usr_bin_directory"
+            chmod 0755 "$usr_bin_directory"
+        fi
+
+        mv "${bin_directory}/op" "${usr_bin_directory}/op"
     fi
 }
 
