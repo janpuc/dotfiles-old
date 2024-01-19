@@ -4,7 +4,6 @@ set -euo pipefail
 
 # Define global bin_directory variable
 bin_directory="${HOME}/.local/bin"
-printf ".install-op.sh/n"
 
 # Create $HOME/bin directory if missing and add it to PATH
 setup_bin_directory() {
