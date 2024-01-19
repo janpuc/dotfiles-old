@@ -15,7 +15,6 @@ setup_bin_directory() {
     if [[ ":$PATH:" != *":$bin_directory:"* ]]; then
         # Prefer appending to PATH so existing binaries from Homebrew, etc. are found first
         export PATH="${PATH}:${bin_directory}"
-        echo "${PATH}:${bin_directory}" >> /etc/paths
     fi
 }
 
@@ -49,6 +48,9 @@ fetch_op_binary() {
         fetch_file "op.zip" "$op_download_url"
         unzip "${bin_directory}/op.zip" -x op.sig -d "${bin_directory}" >/dev/null 2>&1
         rm "${bin_directory}/op.zip"
+
+        # TODO: Fix PATH issue, for now just move to /usr/local/bin
+        mv "${bin_directory}/op" /usr/local/bin
     fi
 }
 
