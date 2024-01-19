@@ -7,7 +7,7 @@ set -euo pipefail
 # Check for Homebrew
 if ! command -v brew &> /dev/null; then
     printf "Info: Homebrew is not installed. Installing Homebrew...\n"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
     printf "Info: Homebrew is already installed. Continuing...\n"
 fi
