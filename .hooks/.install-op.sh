@@ -12,11 +12,10 @@ setup_bin_directory() {
         chmod 0755 "$bin_directory"
     fi
 
-    case ":${PATH:=$bin_directory}" in
-        *:"$bin_directory":*)  ;;
+    if [[ ":$PATH:" != *":$bin_directory:"* ]]; then
         # Prefer appending to PATH so existing binaries from Homebrew, etc. are found first
-        *:) PATH="$PATH:$bin_directory" ;;
-    esac
+        export PATH="${PATH}:${bin_directory}"
+    fi
 }
 
 # Check if a binary is installed
