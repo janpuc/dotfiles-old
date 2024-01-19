@@ -42,23 +42,12 @@ fetch_op_binary() {
     op_download_url="https://cache.agilebits.com/dist/1P/op2/pkg/v2.23.0/op_darwin_arm64_v2.23.0.zip"
 
     # Check if op is already installed and skip if found, otherwise install it
-    if check_binary_installed "op"; then
+    if check_binary_installed "${bin_directory}/op"; then
         return 0
     else
         fetch_file "op.zip" "$op_download_url"
         unzip "${bin_directory}/op.zip" -x op.sig -d "${bin_directory}" >/dev/null 2>&1
         rm "${bin_directory}/op.zip"
-
-        # TODO: Fix PATH issue, for now just move to /usr/local/bin
-        local usr_bin_directory
-        usr_bin_directory="/usr/local/bin"
-
-        if [ ! -d "$usr_bin_directory" ]; then
-            mkdir -p "$usr_bin_directory"
-            chmod 0755 "$usr_bin_directory"
-        fi
-
-        mv "${bin_directory}/op" "${usr_bin_directory}/op"
     fi
 }
 
