@@ -3,5 +3,5 @@
 ## Bootstrap
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/janpuc/dotfiles/HEAD/bootstrap.sh)"
+sh -c "$(curl -fsLS get.chezmoi.io/lb)" -- init --apply janpuc [--branch=ref] --use-builtin-git=true
 ```
