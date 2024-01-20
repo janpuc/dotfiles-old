@@ -10,7 +10,7 @@ if [ -x ${BREW_PATH} ]; then
         printf "Info: Cask Upgrade is not installed. Installing Cask Upgrade...\n"
         brew tap buo/cask-upgrade
     else
-        brew cu --all --cleanup --force --yes >/dev/null 2>&1
+        brew cu --all --cleanup --force --yes
     fi
 else
     printf "Error: Homebrew is not installed. Exiting.\n"
