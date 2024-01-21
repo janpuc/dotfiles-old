@@ -71,6 +71,11 @@ brew "helm"
 # https://jqlang.github.io/jq/
 brew "jq"
 
+# ==> kopia: stable 0.15.0 (bottled)
+# Fast and secure open-source backup
+# https://kopia.io
+brew "kopia"
+
 # ==> kubectx:
 # Tool that can switch between kubectl contexts easily and create aliases
 # https://github.com/ahmetb/kubectx
@@ -166,6 +171,10 @@ cask "hiddenbar"
 # ==> keepingyouawake:
 # https://keepingyouawake.app/
 cask "keepingyouawake"
+
+# ==> kopiaui:
+# https://kopia.io/
+cask "kopiaui"
 
 # ==> messenger:
 # https://www.messenger.com/desktop
