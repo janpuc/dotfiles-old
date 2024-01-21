@@ -4,6 +4,5 @@ hooks:
   read-source-state:
     pre:
       command: ".local/share/chezmoi/.hooks/.install-op.sh"
-# TODO: Fix PATH var
 onepassword:
   command: "{{ .chezmoi.homeDir }}/.local/bin/op"
