@@ -1,0 +1,72 @@
+{{- $taps := list
+  "homebrew/bundle"
+  "homebrew/cask-fonts"
+  "homebrew/cask-versions"
+-}}
+
+{{- $brews := concat $packages (list
+  "age"
+  "chezmoi"
+  "curl"
+  "delve"
+  "dockutil"
+  "git"
+  "git-extras"
+  "gnupg"
+  "go"
+  "gopls"
+  "goreleaser"
+  "helm"
+  "jq"
+  "kopia"
+  "kubectx"
+  "kubernetes-cli"
+  "mas"
+  "openshift-cli"
+  "powerlevel10k"
+  "sops"
+  "staticcheck"
+  "terraform"
+  "yamllint"
+  "zsh"
+)
+-}}
+
+{{- $casks := list
+  "1password-beta"
+  "1password-cli"
+  "arc"
+  "crossover"
+  "dbeaver-community"
+  "discord"
+  "docker"
+  "font-meslo-lg-nerd-font"
+  "google-chrome"
+  "hiddenbar"
+  "keepingyouawake"
+  "kopiaui"
+  "messenger"
+  "microsoft-auto-update"
+  "microsoft-teams"
+  "obsidian"
+  "prismlauncher"
+  "rectangle"
+  "slack"
+  "stats"
+  "tunnelblick"
+  "unnaturalscrollwheels"
+  "utm"
+  "visual-studio-code"
+  "warp"
+  "zoom"
+-}}
+
+{{ range ($taps | sortAlpha | uniq) -}}
+tap "{{ . }}"
+{{ end -}}
+{{ range ($brews | sortAlpha | uniq) -}}
+brew "{{ . }}"
+{{ end -}}
+{{ range ($casks | sortAlpha | uniq) -}}
+cask "{{ . }}"
+{{ end -}}

@@ -1,18 +1,21 @@
 #!/usr/bin/env bash
 
-# Brewfile hash: {{ include "dot_Brewfile" | sha256sum }}s
+# packages.def hash: {{ include (joinPath .chezmoi.sourceDir ".chezmoitemplates/packages.def") | sha256sum }}s
 
 set -euo pipefail
 
 # This script uses Homebrew to install relevant packages.
 
-# The packages to install are defined in Brewfile. Changes to the Brewfile
-# will be detected by Chezmoi between executions to apply any changes.
+# The packages to install are defined in packages.def Chezmoi template. Changes to the packages.def
+# template will be detected by Chezmoi between executions to apply any changes.
 # NOTE: Packages added manually to the target are removed by the `cleanup` option.
 
 # Prompt pre-emptively for sudo password
 printf "Info: A password may be required to install Homebrew packages.\n"
 sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until the script has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 if [ -x ${BREW_PATH} ]; then
     # Source Homebrew environment variables
@@ -22,9 +25,13 @@ if [ -x ${BREW_PATH} ]; then
     printf "Info: Updating Homebrew.\n"
     brew update
     printf "Info: Installing Homebrew packages.\n"
-    brew bundle --no-lock --global
+    brew bundle --no-lock --file=/dev/stdin <<EOF
+    {{ includeTemplate "packages.def" . -}}
+    EOF
     printf "Info: Cleaning up Homebrew packages.\n"
-    brew bundle cleanup --force --global
+    brew bundle cleanup --force --file=/dev/stdin <<EOF
+    {{ includeTemplate "packages.def" . -}}
+    EOF
 
     brew cleanup
     printf "Info: Homebrew package installations completed.\n"
