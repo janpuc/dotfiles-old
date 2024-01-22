@@ -1,4 +1,5 @@
 {{- $taps := list
+  "hashicorp/tap"
   "homebrew/autoupdate"
   "homebrew/bundle"
   "homebrew/cask-fonts"
