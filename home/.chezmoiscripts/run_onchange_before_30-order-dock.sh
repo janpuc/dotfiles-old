@@ -18,4 +18,5 @@ else
     dockutil --position 7 --add '/Applications/Visual Studio Code.app' --section apps --no-restart >/dev/null 2>&1
     dockutil --position 8 --add '/Applications/Warp.app' --section apps --no-restart >/dev/null 2>&1
     dockutil --position 0 --add '~/Downloads/' --section others --display stack --view fan >/dev/null 2>&1
+    printf "Info: Dock applications have been ordered."
 fi
