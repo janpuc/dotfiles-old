@@ -42,3 +42,5 @@
 	required = true
 [diff "sopsdiffer"]
 	textconv = sops -d --config /dev/null
+[credential "https://dev.azure.com"]
+	useHttpPath = true
