@@ -32,6 +32,9 @@ if [ -x ${BREW_PATH} ]; then
     brew bundle cleanup --force --file=/dev/stdin <<EOF
     {{ includeTemplate "packages.def" . -}}
     EOF
+    
+    printf "Info: Started autoupdate.\n"
+    brew autoupdate start 43200 --upgrade --cleanup --immediate --sudo
 
     brew cleanup
     printf "Info: Homebrew package installations completed.\n"
