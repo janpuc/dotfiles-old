@@ -1,4 +1,5 @@
 {{- $taps := list
+  "homebrew/autoupdate"
   "homebrew/bundle"
   "homebrew/cask-fonts"
   "homebrew/cask-versions"
