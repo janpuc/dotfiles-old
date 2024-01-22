@@ -33,8 +33,8 @@ if [ -x ${BREW_PATH} ]; then
     {{ includeTemplate "packages.def" . -}}
     EOF
     
+    brew autoupdate start 43200 --upgrade --cleanup --enable-notification --immediate --sudo
     printf "Info: Started autoupdate.\n"
-    brew autoupdate start 43200 --upgrade --cleanup --immediate --sudo
 
     brew cleanup
     printf "Info: Homebrew package installations completed.\n"
