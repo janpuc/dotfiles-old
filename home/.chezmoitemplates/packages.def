@@ -28,7 +28,6 @@
   "powerlevel10k"
   "sops"
   "staticcheck"
-  "terminal-notifier"
   "terraform"
   "yamllint"
   "zsh"
