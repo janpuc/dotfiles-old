@@ -1,4 +1,13 @@
+### Thrash files
 *.DS_Store
 *.LSOverride
 Thumbs.db
 .bundle
+
+### Sensitive files
+*.crt
+*.key
+*.pem
+*.cer
+id_ed25519
+id_rsa
