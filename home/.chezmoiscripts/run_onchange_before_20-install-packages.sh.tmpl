@@ -33,16 +33,14 @@ if [ -x ${BREW_PATH} ]; then
     {{ includeTemplate "packages.def" . -}}
     EOF
     
-    brew autoupdatee -h >/dev/null 2>&1
-    if [ $? -eq 1 ]; then
-        prinf "Warning: Brew autopudate not available. To enable add `homebrew/autoupdate` to taps.\n"
-    else
-        brew autoupdate start 43200 --upgrade --cleanup --immediate --sudo >/dev/null 2>&1
-        if [ $? -eq 1 ]; then
-            printf "Info: Brew autoupdate already running.\n"
-        else
+    if brew autoupdate -h >/dev/null 2>&1; then
+        if brew autoupdate start 43200 --upgrade --cleanup --immediate --sudo >/dev/null 2>&1; then
             printf "Info: Brew autoupdate started.\n"
+        else
+            printf "Info: Brew autoupdate already running.\n"
         fi
+    else
+        printf "Warning: Brew autopudate not available. To enable add homebrew/autoupdate to taps.\n"
     fi
 
     brew cleanup
