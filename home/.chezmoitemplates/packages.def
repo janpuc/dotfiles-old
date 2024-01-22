@@ -4,7 +4,7 @@
   "homebrew/cask-versions"
 -}}
 
-{{- $brews := concat $packages (list
+{{- $brews := list
   "age"
   "chezmoi"
   "curl"
@@ -29,7 +29,6 @@
   "terraform"
   "yamllint"
   "zsh"
-)
 -}}
 
 {{- $casks := list
