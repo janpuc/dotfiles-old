@@ -18,7 +18,7 @@
 [browser "arc"]
   path = /Applications/Arc.app
 [credential]
-  helper = osxkeychain
+	helper = /usr/local/share/gcm-core/git-credential-manager
 [push]
   default = simple
 [merge]
