@@ -35,6 +35,7 @@
   "openshift-cli"
   "peco"
   "pinentry-mac"
+  "pre-commit"
   "ripgrep"
   "sigstore/tap/gitsign"
   "shellcheck"
