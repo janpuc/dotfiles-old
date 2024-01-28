@@ -14,6 +14,7 @@
   "cheat"
   "chezmoi"
   "coreutils"
+  "direnv"
   "dockutil"
   "git"
   "git-delta"
