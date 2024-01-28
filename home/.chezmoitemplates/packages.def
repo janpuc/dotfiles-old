@@ -1,4 +1,5 @@
 {{- $taps := list
+  "fluxcd/tap"
   "go-task/tap"
   "hashicorp/tap"
   "homebrew/autoupdate"
@@ -17,7 +18,7 @@
   "coreutils"
   "direnv"
   "dockutil"
-  "flux"
+  "fluxcd/tap/flux"
   "git"
   "git-delta"
   "gnu-sed"
