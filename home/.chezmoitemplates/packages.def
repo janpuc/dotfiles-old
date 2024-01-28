@@ -4,6 +4,7 @@
   "homebrew/bundle"
   "homebrew/cask-fonts"
   "homebrew/cask-versions"
+  "sigstore/tap"
 -}}
 
 {{- $brews := list
