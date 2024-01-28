@@ -1,0 +1,8 @@
+[DEFAULT]
+user = {{ onepasswordRead "op://Private/oci/user" }}
+fingerprint = {{ onepasswordRead "op://Private/oci/fingerprint" }}
+key_file = {{ .chezmoi.homeDir }}/.ssh/oci_api_key.pem
+tenancy = {{ onepasswordRead "op://Private/oci/tenancy" }}
+region = {{ onepasswordRead "op://Private/oci/region" }}
+aws_access_key_id = {{ onepasswordRead "op://Private/oci/aws_access_key_id" }}
+aws_secret_access_key = {{ onepasswordRead "op://Private/oci/aws_secret_access_key" }}
