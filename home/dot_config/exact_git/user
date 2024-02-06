@@ -1,0 +1,9 @@
+[user]
+  name = Jan Pucilowski
+  email = jan.pucilowski99@gmail.com
+
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+
+[credential "https://github.com"]
+  username = janpuc
