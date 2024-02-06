@@ -39,6 +39,7 @@
   "mas"
   "neofetch"
   "oci-cli"
+  "openjdk@8"
   "openshift-cli"
   "peco"
   "pinentry-mac"
@@ -86,7 +87,6 @@
   "warp"
   "wezterm"
   "zoom"
-  "zulu8"
 -}}
 
 {{ range ($taps | sortAlpha | uniq) -}}
