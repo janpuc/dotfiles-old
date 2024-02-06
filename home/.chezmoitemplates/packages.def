@@ -86,6 +86,7 @@
   "warp"
   "wezterm"
   "zoom"
+  "zulu8"
 -}}
 
 {{ range ($taps | sortAlpha | uniq) -}}
