@@ -1,0 +1,24 @@
+[user]
+  name = Jan Pucilowski
+  email = jan.pucilowski99@gmail.com
+  signingkey = {{ onepasswordRead "op://SSH/signing_key/public key" }}
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+  allowedSignersFile = {{ .chezmoi.homeDir }}/.ssh/allowed_signers
+
+[commit]
+  gpgsign = true
+
+[tag]
+  gpgsign = true
+  forceSignAnnotated = true
+
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+
+[credential "https://github.com"]
+  username = janpuc
