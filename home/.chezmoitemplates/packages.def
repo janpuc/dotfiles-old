@@ -1,5 +1,4 @@
 {{- $taps := list
-  "adoptopenjdk/openjdk"
   "fluxcd/tap"
   "go-task/tap"
   "hashicorp/tap"
@@ -61,7 +60,7 @@
 {{- $casks := list
   "1password-beta"
   "1password-cli"
-  "adoptopenjdk/openjdk/adoptopenjdk8"
+  "adoptopenjdk8"
   "arc"
   "crossover"
   "dbeaver-community"
