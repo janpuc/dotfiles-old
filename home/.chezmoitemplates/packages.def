@@ -60,7 +60,6 @@
 {{- $casks := list
   "1password-beta"
   "1password-cli"
-  "adoptopenjdk8"
   "arc"
   "crossover"
   "dbeaver-community"
@@ -88,6 +87,7 @@
   "warp"
   "wezterm"
   "zoom"
+  "zulu8"
 -}}
 
 {{ range ($taps | sortAlpha | uniq) -}}
