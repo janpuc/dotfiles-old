@@ -16,7 +16,7 @@ else
     dockutil --position 5 --add '/Applications/Messenger.app' --section apps --no-restart >/dev/null 2>&1
     dockutil --position 6 --add '/Applications/Microsoft Teams (work or school).app' --section apps --no-restart >/dev/null 2>&1
     dockutil --position 7 --add '/Applications/Visual Studio Code.app' --section apps --no-restart >/dev/null 2>&1
-    dockutil --position 8 --add '/Applications/Warp.app' --section apps --no-restart >/dev/null 2>&1
+    dockutil --position 8 --add '/Applications/WezTerm.app' --section apps --no-restart >/dev/null 2>&1
     dockutil --position 0 --add '~/Downloads/' --section others --display stack --view fan >/dev/null 2>&1
     printf "Info: Dock applications have been ordered.\n"
 fi
