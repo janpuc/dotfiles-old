@@ -6,6 +6,7 @@
   "homebrew/bundle"
   "homebrew/cask-fonts"
   "homebrew/cask-versions"
+  "janpuc/tap"
   "sigstore/tap"
 -}}
 
@@ -31,6 +32,7 @@
   "helix"
   "helm"
   "httpie"
+  "janpuc/tap/pongo"
   "jq"
   "kopia"
   "kubectx"
