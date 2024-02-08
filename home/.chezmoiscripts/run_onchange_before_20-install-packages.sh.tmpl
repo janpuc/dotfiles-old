@@ -32,7 +32,12 @@ if [ -x ${BREW_PATH} ]; then
     brew bundle cleanup --force --file=/dev/stdin <<EOF
     {{ includeTemplate "packages.def" . -}}
     EOF
-    
+
+    # Create Launch Agent dir
+    if [ ! -d "${HOME}/Library/LaunchAgents" ]; then
+        mkdir -p "${HOME}/Library/LaunchAgents"
+    fi
+
     if brew autoupdate -h >/dev/null 2>&1; then
         if brew autoupdate start 43200 --upgrade --cleanup --immediate --sudo >/dev/null 2>&1; then
             printf "Info: Brew autoupdate started.\n"
