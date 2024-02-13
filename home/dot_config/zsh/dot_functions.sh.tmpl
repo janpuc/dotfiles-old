@@ -3,3 +3,18 @@ function br {
     emulate -L zsh
     (){ broot --outcmd $1 ${@:2} && source $1 } =() $@
 }
+
+# Shell function for ShellGPT to generate commit message
+function git_commit_with_sgpt {
+    local changes=$(git diff HEAD~1)
+    local output=$(sgpt "generate git commit message, use convetional formating\n $changes")
+
+    echo "$output"
+    echo -n "Proceed with commit? (y/n): "
+    read response
+    if [[ "$response" == "y" ]]; then
+        git commit -am "$output"
+    else
+        echo "Commit aborted."
+    fi
+}
