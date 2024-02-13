@@ -7,4 +7,4 @@
   d = diff
   dc = diff --cached
   cmgen = ! git diff --cached | sgpt 2>/dev/null --role commit-generator
-  cmset = ! git commit -m '$(git cmgen)'
+  cmset = commit -m "$(git cmgen)"
