@@ -7,6 +7,7 @@
   "homebrew/cask-fonts"
   "homebrew/cask-versions"
   "sigstore/tap"
+  "vanyauhalin/shell_gpt"
 -}}
 
 {{- $brews := list
@@ -49,6 +50,7 @@
   "staticcheck"
   "sops"
   "thefuck"
+  "vanyauhalin/shell_gpt/shell_gpt"
   "vivid"
   "yamllint"
   "yq"
