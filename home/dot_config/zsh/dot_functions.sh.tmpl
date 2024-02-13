@@ -6,7 +6,7 @@ function br {
 
 # Shell function for ShellGPT to generate commit message
 function git_commit_with_sgpt {
-    local output=$(git diff --cached | sgpt 'generate git commit message, use convetional formating')
+    local output=$(git diff --cached | sgpt --role commit-generator)
 
     echo "$output"
     echo -n "Proceed with commit? (y/n): "
