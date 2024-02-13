@@ -42,7 +42,9 @@ fi
 # Wget
 alias wget='wget --hsts-file="${XDG_CACHE_HOME}/wget-hsts"'
 
-# Zellij
+# ShellGPT
+alias sgpt='sgpt 2>/dev/null'
+alias sgpt-diff='git diff | sgpt "Generate git commit message, for my changes, use conventional message formating"'
 
 # Conveniences
 alias zshrc='${=EDITOR} ${ZDOTDIR:-$XDG_CONFIG_HOME}/.zshrc'
