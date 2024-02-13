@@ -1,4 +1,5 @@
 [alias]
+  a = add -A
   co = checkout
   c = commit
   ca = commit -a
@@ -6,5 +7,6 @@
   cam = commit -am
   d = diff
   dc = diff --cached
+  p = push
   cmgen = ! git diff --cached | sgpt 2>/dev/null --role commit-generator
-  cmset = commit -m "$(git cmgen)"
+  cmset = ! git commit -m \"$(git cmgen)\"
