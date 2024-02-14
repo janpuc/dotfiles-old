@@ -11,6 +11,8 @@
 
 {{- $brews := list
   "age"
+  "awscli"
+  "awsume"
   "bat"
   "broot"
   "cheat"
@@ -19,6 +21,7 @@
   "direnv"
   "dockutil"
   "fluxcd/tap/flux"
+  "gimme-aws-creds"
   "git"
   "git-delta"
   "gnu-sed"

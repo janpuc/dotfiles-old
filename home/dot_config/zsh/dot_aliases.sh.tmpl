@@ -30,6 +30,9 @@ if command -v bat &>/dev/null; then
   export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 fi
 
+# Awsume is an aws-cli profile manager
+alias awsume=". awsume"
+
 # Helix
 if command -v hx &>/dev/null; then
   alias vim='hx'
