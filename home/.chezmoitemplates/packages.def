@@ -21,6 +21,7 @@
   "direnv"
   "dockutil"
   "fluxcd/tap/flux"
+  "fzf"
   "gimme-aws-creds"
   "git"
   "git-delta"
