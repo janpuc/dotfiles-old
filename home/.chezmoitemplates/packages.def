@@ -12,7 +12,6 @@
 {{- $brews := list
   "age"
   "awscli"
-  "awsume"
   "bat"
   "broot"
   "cheat"
