@@ -37,6 +37,11 @@ export PATH="${GOBIN}:${PATH}"
 # Httpie
 export HTTPIE_CONFIG_DIR="${XDG_CONFIG_HOME}/httpie"
 
+# Kubectl
+kubeconfig=("${HOME}/.kube/config")
+kubeconfig+=($(find "${HOME}/.kube/wbd" -type f -name '*.yaml'))
+export KUBECONFIG="${(j/:/)kubeconfig}"
+
 # Less
 export LESSKEY="${XDG_CONFIG_HOME}/less/lesskey"
 export LESSHISTFILE="${XDG_CACHE_HOME}/less/history"
