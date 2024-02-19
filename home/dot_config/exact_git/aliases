@@ -8,4 +8,5 @@
   d = diff
   dc = diff --cached
   p = push
+  cmgen = ! git diff --cached | sgpt --role commit-generator 2>/dev/null | tee commitmsg.tmp
   cmset = commit -F commitmsg.tmp
