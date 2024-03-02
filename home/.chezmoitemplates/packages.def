@@ -94,6 +94,8 @@
   "zed"
   "zoom"
   "zulu8"
+  "zulu17"
+  "zulu"
 -}}
 
 {{ range ($taps | sortAlpha | uniq) -}}

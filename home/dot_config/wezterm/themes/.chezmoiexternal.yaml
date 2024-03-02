@@ -1,0 +1,7 @@
+{{- $refreshPeriod := "168h" }}
+
+"rose-pine":
+  type: archive
+  url: "https://github.com/neapsix/wezterm/archive/refs/heads/main.zip"
+  stripComponents: 2
+  refreshPeriod: {{ $refreshPeriod }}
