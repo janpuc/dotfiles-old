@@ -38,6 +38,7 @@
   "kopia"
   "kubectx"
   "kubernetes-cli"
+  "lua"
   "lsd"
   "mas"
   "neofetch"
