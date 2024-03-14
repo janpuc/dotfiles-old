@@ -17,7 +17,7 @@ config.colors = colors
 --config.bold_brightnes_ansi_c
 
 -- Config font options
-config.font = wezterm.font 'MesloLGM Nerd Font Bold'
+config.font = wezterm.font 'MesloLGM Nerd Font'
 config.font_size = 12
 
 -- Config window defaults
