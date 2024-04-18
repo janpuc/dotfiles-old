@@ -1,4 +1,5 @@
 {{- $taps := list
+  "FairwindsOps/tap"
   "fluxcd/tap"
   "go-task/tap"
   "hashicorp/tap"
@@ -19,6 +20,8 @@
   "coreutils"
   "direnv"
   "dockutil"
+  "eksctl"
+  "FairwindsOps/tap/pluto"
   "fluxcd/tap/flux"
   "fzf"
   "gimme-aws-creds"
@@ -64,7 +67,7 @@
 -}}
 
 {{- $casks := list
-  "1password-beta"
+  "1password"
   "1password-cli"
   "altserver"
   "arc"
@@ -85,6 +88,7 @@
   "obsidian"
   "orbstack"
   "prismlauncher"
+  "readdle-spark"
   "rectangle"
   "slack"
   "stats"
