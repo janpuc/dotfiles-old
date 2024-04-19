@@ -1,4 +1,5 @@
 {{- $taps := list
+  "danielfoehrkn/switch"
   "FairwindsOps/tap"
   "fluxcd/tap"
   "go-task/tap"
@@ -18,6 +19,7 @@
   "cheat"
   "chezmoi"
   "coreutils"
+  "danielfoehrkn/switch/switch"
   "direnv"
   "dockutil"
   "eksctl"

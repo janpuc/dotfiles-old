@@ -170,6 +170,7 @@ setopt SHARE_HISTORY        # Share history between all sessions.
 (( ${+commands[chezmoi]} )) && _evalcache chezmoi completion zsh
 (( ${+commands[flux]} )) && _evalcache flux completion zsh
 (( ${+commands[op]} )) && _evalcache op completion zsh && compdef _op op
+(( ${+commands[switcher]} )) && _evalcache switcher init zsh && _evalcache switch completion zsh
 (( ${+commands[thefuck]} )) && _evalcache thefuck --alias
 (( ${+commands[wezterm]} )) && _evalcache wezterm shell-completion --shell zsh
 (( ${+commands[zoxide]} )) && _evalcache zoxide init --cmd cd zsh

@@ -49,10 +49,11 @@ alias wget='wget --hsts-file="${XDG_CACHE_HOME}/wget-hsts"'
 alias sgpt='sgpt 2>/dev/null'
 alias cmgen='git diff --cached | sgpt --role commit-generator | tee commitmsg.tmp'
 
-# kubernetes
+# Kubernetes
 alias k='kubectl'
 alias kx='kubectx'
 alias ku='kubectx -u'
+alias s='switch'
 
 # Conveniences
 alias zshrc='${=EDITOR} ${ZDOTDIR:-$XDG_CONFIG_HOME}/.zshrc'
