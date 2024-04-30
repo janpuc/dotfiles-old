@@ -8,6 +8,7 @@
   "homebrew/bundle"
   "homebrew/cask-fonts"
   "homebrew/cask-versions"
+  "robusta-dev/homebrew-krr"
   "sigstore/tap"
 -}}
 
@@ -55,6 +56,7 @@
   "pinentry-mac"
   "pre-commit"
   "ripgrep"
+  "robusta-dev/homebrew-krr/krr"
   "sigstore/tap/gitsign"
   "shellcheck"
   "staticcheck"
